@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.box {
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    margin: 10px 0;
+    width: 90%;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row>* {
+    flex: 1;
+}
+
+.hint {
+    font-size: 0.9em;
+    color: #555;
+}
+#qrcode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

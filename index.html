@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>📱 Generador de Código QR - PWD 7° 2°</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Librería de QR por CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <link rel="stylesheet" href="/estilo.css">
+</head>
+
+<body>
+    <h1>📱 Generador de Código QR</h1>
+    <p>Ingresa una URL y genera el QR </p>
+
+    <div class="box">
+        <input type="text" id="link" placeholder="Pegá acá tu link">
+
+        <div class="row">
+            <select id="color">
+                <option value="#000000">Negro (clásico)</option>
+                <option value="#2e7d32">Verde</option>
+                <option value="#1565c0">Azul</option>
+                <option value="#c62828">Rojo</option>
+            </select>
+
+            <select id="size">
+                <option value="128">128px</option>
+                <option value="192">192px</option>
+                <option value="256" selected>256px</option>
+                <option value="320">320px</option>
+            </select>
+        </div>
+
+        <button onclick="generateQR()">Generar QR</button>
+        <div id="qrcode"></div>
+        <button onclick="downloadQR()">Descargar QR </button>
+    </div>
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
